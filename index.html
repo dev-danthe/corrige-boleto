@@ -7,15 +7,39 @@
     <title>Corrigir Boleto</title>
 </head>
 <body>
-    <div>
-        <h1>CORRIGE BOLETO</h1>
-    <input type="text" id="boleto" placeholder="cole o numero copiado do gevenue">
-    <br><br>
-    <input id="corrigido" type="text" placeholder="número do boleto corrigido"><button id="copiar">
-      <img src="iconCopy.svg"/>
-      </button>
-      <alert id="alert" >Copiado!</alert>
+    <conteudo>
+        <tela>
+        <boleto>
+            <input type="text" id="boleto" placeholder="cole o numero copiado do gevenue">
+            <input id="corrigido" type="text" placeholder="número do boleto corrigido" disabled><button id="copiar"><img src="iconCopy.svg"/></button>
+        </boleto>
+        <dados>
+            <input id="valor" type="text" placeholder="R$ 0,00" disabled><button id="copiarvalor"><img src="iconCopy.svg"/></button>
+            <input id="cpf" type="text" placeholder="000.000.000-00" >
+        </dados>
+        <button id="save">Salvar</button>
+    </tela>
+        <alert id="alert"></alert>
+    </conteudo>
+    <div id="stats">
+        <div><label>Acordos</label><x id="acordos"></x></div>
+        <div><label>Total</label><x id="valorTotal"></x></div>
+    </div>
+
+    <funcoes>
+        <button id="zerar">Zerar</button>
+        <button id="verAcordos">Ver acordos</button>
+    </funcoes>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Acordos Salvos</h2>
+            <div id="acordosList"></div>
+        </div>
     </div>
     <script src="script.js"></script>
+
+    <footer><img src="vgx.svg"/></footer>
 </body>
 </html>
