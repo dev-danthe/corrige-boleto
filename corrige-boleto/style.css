@@ -36,7 +36,7 @@ tela {
 
 boleto {
   display: block;
-  width: 427px;
+  width: 455px;
 }
 
 dados {
@@ -45,8 +45,8 @@ dados {
 }
 
 input {
-  width: 100%;
-  padding: 10px;
+  width: 94%;
+  padding: 11px 10px;
   margin: 6px 0;
   border: 1px solid #6060604d;
   border-radius: 6px;
