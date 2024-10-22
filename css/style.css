@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -23,13 +23,40 @@ header {
 main {
     text-align: center;
     padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.description {
+    margin-bottom: 40px;
 }
 
 .projects {
+    margin-top: 40px;
+}
+
+.project-list {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .project-button {
