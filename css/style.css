@@ -1,106 +1,139 @@
+:root {
+  --pop: #0054ef;
+  --dark: #090F29;
+  --black: #1A1A1A;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  background-color: #090F29;
+  color: white;
+  font-family: "Open Sans";
+  background-image: url("/images/back.png");
+  backdrop-filter: brightness(0.1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: solid 2px var(--pop);
+  border-radius: 6px;
+  padding: 15px 25px;
+  background: var(--pop);
+  color: var(--dark);
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ffffff00;
+  color: var(--pop);
 }
 
 header {
-  background-color: #3D14BE;
-  width: 100%;
-  padding: 20px 0;
-  text-align: center;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-main {
-  text-align: center;
-  padding: 20px;
-  width: 80%;
-  max-width: 1200px;
-}
-
-.intro {
-  display: flex;
+  height: 30px;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
+  padding: 10px 28px;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  position: fixed;
+  margin-top: 10px;
 }
 
-.profile-photo {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
+logo {
+  font-family: "DM Mono";
+  font-size: 20pt;
+  font-weight: bold;
+  margin-left: 20px;
 }
 
-.intro-text {
-  max-width: 600px;
+dot {
+  font-size: 26pt;
+  letter-spacing: -10px;
+  line-height: 0;
+  color: #0054ef;
+}
+
+itens {
+  text-align: right;
+  width: inherit;
+}
+
+.menuList {
+  font-size: 16pt;
+  padding: 10px 20px;
+  font-weight: 650;
+}
+
+.menuList:hover {
+  color: #0054ef;
+  cursor: pointer;
+}
+
+.firstSection {
+  height: inherit;
+  display: flex;
+  padding: 0 100px;
+  align-items: center;
+}
+
+.board {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(1px);
+  background: #090F296B;
+  border-radius: 20px;
+}
+
+.first {
+  padding: 30px;
+  width: 510pt;
+  height: fit-content;
+}
+
+.title, .title dot {
+  font-size: 40pt;
+  width: fit-content;
+  margin: 0.1em 0;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 20pt;
+  font-weight: bold;
+  font-family: "DM Mono";
+  color: var(--pop);
 }
 
 .description {
-  margin-bottom: 40px;
+  margin-top: 24px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 30px;
 }
 
-.projects {
-  margin-top: 40px;
-}
-
-.project-list {
-  display: flex;
+.buttons {
+  margin-bottom: 20px;
   gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.project-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 300px;
-  margin: 20px;
-  transition: transform 0.3s;
+.buttonInvert {
+  background-color: #ffffff00;
+  color: var(--pop);
 }
 
-.project-card:hover {
-  transform: scale(1.05);
+.buttonInvert:hover {
+  background-color: var(--pop);
+  color: var(--dark);
 }
 
-.project-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.spaceRight {
+  margin-right: 20px;
 }
 
-.project-info {
-  padding: 20px;
-}
-
-.project-info h3 {
-  margin: 0 0 10px;
-}
-
-.project-info p {
-  margin: 0 0 20px;
-}
-
-.project-button {
-  background-color: #3D14BE;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.project-button:hover {
-  background-color: #2C0F8A;
+.pfp {
+  width: 600px;
+  border-radius: 50%;
+  display: grid;
+  margin: auto;
 }
